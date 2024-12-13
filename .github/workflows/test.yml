@@ -12,6 +12,6 @@ jobs:
               with:
                 node-version: 18
             - name: run npm ci
-              run: nmp ci
+              run: npm ci
             - name: perform unit test
               run: npm test
