@@ -16,6 +16,7 @@ jobs:
             - name: perform unit test
               run: npm test
     deploy:
+      needs: build   #dependency build with test.Build job will initiate if test job gets successfully
       runs-on: ubuntu-latest
       steps:
         - name: Get Code
